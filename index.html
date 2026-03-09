@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>URL Shortener</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🔗 URL Shortener</h1>
+
+<input id="urlInput" placeholder="Enter long URL">
+
+<input id="customInput" placeholder="Custom short code (optional)">
+
+<button onclick="shorten()">Shorten URL</button>
+
+<div id="result"></div>
+
+<div id="qrBox"></div>
+
+<h2>Your URLs</h2>
+
+<table>
+
+<thead>
+<tr>
+<th>Short</th>
+<th>Original</th>
+<th>Clicks</th>
+<th>Action</th>
+</tr>
+</thead>
+
+<tbody id="urlTable"></tbody>
+
+</table>
+
+<h2>Top Clicked Links</h2>
+
+<ul id="topLinks"></ul>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
